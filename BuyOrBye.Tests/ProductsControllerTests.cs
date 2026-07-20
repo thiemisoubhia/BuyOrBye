@@ -1,4 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using BuyOrBye.Controllers;
+using BuyOrBye.Data;
+using BuyOrBye.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BuyOrBye.Tests
 {
