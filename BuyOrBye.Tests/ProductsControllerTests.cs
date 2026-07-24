@@ -10,5 +10,17 @@ namespace BuyOrBye.Tests
     [TestClass]
     public class ProductsControllerTests
     {
+
+        private ApplicationDbContext GetDatabaseContext()
+        {
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase(Guid.NewGuid().ToString())
+                .Options;
+
+            var context = new ApplicationDbContext(options);
+
+            return context;
+        }
+
     }
 }
